@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTO4yRVr-K6cypB0-xhLFaDTyBIpgkILGokg&s"/>
+    <title>Music Player</title>
+</head>
+
+<body>
+<header>
+    <div class="menu_side">
+        <h1>Music Player</h1>
+        <div class="playlist">
+            <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Playlist</h4>
+            <h4 ><span></span><i class="bi bi-music-note-beamed"></i> Last Listening</h4>
+            <h4 ><span></span><i class="bi bi-music-note-beamed"></i> Recommended</h4>
+        </div>
+        <div class="menu_song">
+            <li class="songItem">
+                <span>01</span>
+                <img src="https://cdns-images.dzcdn.net/images/cover/cfc6d9793a6d36ffa98ce6a19cf02acb/0x1900-000000-80-0-0.jpg" alt="Alan">
+                <h5>
+                    On My Way
+                    <div class="subtitle">Alan Walker</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+            </li>
+            <li class="songItem">
+                <span>02</span>
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/da/Alan_Walker_-_Faded.png" alt="Alan">
+                <h5>
+                    Faded
+                    <div class="subtitle">Alan Walker</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+            </li>
+            <li class="songItem">
+                <span>03</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9W9LMrCJKcVP_CHOXG3lQawOBFQ-sd51vA&s" alt="Alan">
+                <h5>
+                    Alone
+                    <div class="subtitle">Alan Walker</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+            </li>
+            <li class="songItem">
+                <span>04</span>
+                <img src="https://cdns-images.dzcdn.net/images/cover/0cda4cfe95d088169b73cf8bf8a806ff/0x1900-000000-80-0-0.jpg" alt="Alan">
+                <h5>
+                    Better off
+                    <div class="subtitle">Alan Walker</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+            </li>
+            <li class="songItem">
+                <span>05</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJgpC-gC7EXhkIE77SiTZf220Cq16qbQPFgQ&s" alt="Alan">
+                <h5>
+                    WalkerWood
+                    <div class="subtitle">Alan Walker</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+            </li>
+            <li class="songItem">
+                <span>06</span>
+                <img src="https://i.scdn.co/image/ab67616d00001e0258690a47cc9410ee553583f4" alt="Alan">
+                <h5>
+                    Thick of it all
+                    <div class="subtitle">Alan Walker</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+            </li>
+        </div>
+    </div>
+
+
+    <div class="song_side">
+        <nav>
+            <ul>
+                <li>Discover <span></span></li>
+                <li>MY LIBRARY</li>
+                <li>RADIO</li>
+            </ul>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search Music...">
+            </div>
+            <div class="user">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTO4yRVr-K6cypB0-xhLFaDTyBIpgkILGokg&s" alt="User" title="Spotify (Chirag Nagar)">
+            </div>
+        </nav>
+        <div class="content">
+            <h1>Alan Walker - Faded</h1>
+            <p>
+                So when your tears roll down your pillow like a river 
+                <br>
+                I'll be there for you
+            </p>
+            <div class="buttons">
+                <button>PLAY</button>
+                <button>FOLLOW</button>
+            </div>
+        </div>
+        <div class="popular_song">
+            <div class="h4">
+                <h4>Popular Song</h4>
+                <div class="btn_s">
+                    <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                    <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                </div>
+            </div>
+            <div class="pop_song">
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="https://i1.sndcdn.com/artworks-000082238182-c374zz-t500x500.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                    </div>
+                    <h5>Smells Like Teen Spirit
+                        <br>
+                        <div class="subtitle">Nirvana</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="https://i1.sndcdn.com/artworks-000091992028-93yedb-t500x500.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                        <!-- change All id  -->
+                    </div>
+                    <h5>HEY
+                        <br>
+                        <div class="subtitle">Pixies</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="https://i1.sndcdn.com/artworks-mc5sl55XNXmb-0-t500x500.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                    </div>
+                    <h5>Come a Little Closer
+                        <br>
+                        <div class="subtitle">Cage the Elephant</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuy9Mg6WUyApDjgxDVHIFsFBPz5-5a-SgvPQ&s" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                    </div>
+                    <h5>One More Hour
+                        <br>
+                        <div class="subtitle">Tame</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273fd062989b0b63b82f5949524" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                    </div>
+                    <h5>Insomnia
+                        <br>
+                        <div class="subtitle">Memo Boy</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj6oAzP4R7bU3A-iHeU6nTGdBz5vhkyoLH1Q&s" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                    </div>
+                    <h5>F song
+                        <br>
+                        <div class="subtitle">Strawberry Guy</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2735af2ad505ceb4bac21f8235d" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                    </div>
+                    <h5>Anal & the Dishes
+                        <br>
+                        <div class="subtitle">Wheel Walker Jr</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273ce7d499847da02a9cbd1c084" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                    </div>
+                    <h5>Pay Phone
+                        <br>
+                        <div class="subtitle">Marron 5</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="https://cdns-images.dzcdn.net/images/cover/f8d20862103e45fc517efbfaf7bd1fdf/1900x1900-000000-80-0-0.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                    </div>
+                    <h5>After Dark
+                        <br>
+                        <div class="subtitle">Mr.Kattey</div>
+                    </h5>
+                </li>
+            </div>
+        </div>
+        <div class="popular_artists">
+            <div class="h4">
+                <h4>Popular Artists</h4>
+                <div class="btn_s">
+                    <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+                    <i id="right_scrolls" class="bi bi-arrow-right-short"></i>
+                </div>
+            </div>
+            <div class="item">
+                <li>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02e402678bf9e4a59b65d8f280" alt="Arjit Singh" title="Arjit Singh">
+                </li>
+                <li>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273b492477206075438e0751176" alt="Alan Walker" title="Alan Walker">
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_rNIS20tYHiDXKkMvhVT_HXmYNV4tR9idYw&s" alt="Atif Aslam" title="Atif Aslam">
+                </li>
+                <li>
+                    <img src="https://i.scdn.co/image/ab67616d0000b27381a3bb9348718b9703364c1c" alt="Guru RAndawa" title="Guru Randawa">
+                </li>
+                <li>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02cd945b4e3de57edd28481a3f" alt="Dhvani" title="Dhvani">
+                </li>
+                <li>
+                    <img src="https://i.scdn.co/image/ab67616d0000b2737513c4956ea5552caf02eab6" alt="Diljit Dosanjh" title="Diljit Dosanjh">
+                </li>
+                <li>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273ef6e6276ceeb5089d1bb1c5b" alt="Jubin Nautiyal" title="Jubin Nautiyal">
+                </li>
+                <li>
+                    <img src="https://i.scdn.co/image/ab67616d0000b2732a307d64201d08144f68cc49" alt="Neha Kakker" title="Neha Kakker">
+                </li>
+                <li>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273261df87819abc15ebea919b3" alt="Justin Bieber" title="Justin Bieber">
+                </li>
+                <li>
+                    <img src="https://i.scdn.co/image/ab67616d0000b273b7b544e5241b69574edc814e" alt="Honey Singh" title="Honey Singh">
+                </li>
+                <li>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFllbYW8cAKCJnoCMzqewMmRTlrWNGcrw9yQ&s" alt="Akhil" title="Akhil">
+                </li>
+                <!-- change all img  -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="master_play">
+        <div class="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWaFirfPGzgTeNkMsGkSqUDzzuEMe-039bqw&s " alt="Alan" id="poster_master_play">
+        <h5 id="title">Vande Mataram<br>
+            <div class="subtitle">Bankim Chandra</div>
+        </h5>
+        <div class="icon">
+            <i class="bi bi-skip-start-fill" id="back"></i>
+            <i class="bi bi-play-fill" id="masterPlay"></i>
+            <i class="bi bi-skip-end-fill" id="next"></i>
+        </div>
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+            <input type="range" id="seek" min="0" value="0" max="100">
+            <div class="bar2" id="bar2"></div>
+            <div class="dot"></div>
+        </div>
+        <span id="currentEnd">0:00</span>
+
+        <div class="vol">
+            <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+            <input type="range" id="vol" min="0" value="30" max="100">
+            <div class="vol_bar"></div>
+            <div class="dot" id="vol_dot"></div>
+        </div>
+    </div>
+</header>
+    <script src="main.js"></script>
+</body>
+
+</html>
